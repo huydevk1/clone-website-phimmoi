@@ -39,6 +39,12 @@ const Sidebar = (props: Props) => {
             ))}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1">
                 {movieSortByRevenue?.results.slice(0, 9).map((item: MovieType, index: number) => (
+                    // <Link
+                    //     to={{
+                    //         pathname: `/movie`,
+                    //         state: { id: item.id, genre: item.genre_ids[0] },
+                    //     }}
+                    // >
                     <Link to={`/movie?id=${item.id}&genre=${item.genre_ids[0]}`}>
                         <div
                             key={index}

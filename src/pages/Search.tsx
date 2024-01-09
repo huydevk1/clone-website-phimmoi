@@ -103,6 +103,10 @@ const Search = (props: Props) => {
         );
     };
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [currentPage, searchParam]);
+
     return (
         <div className="p-5 md:px-[100px] md:py-10">
             <div className="py-[10px] md:px-[10px] md:py-[15px]">

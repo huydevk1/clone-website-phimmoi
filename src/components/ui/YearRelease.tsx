@@ -17,7 +17,6 @@ const YearRelease = (props: Props) => {
                         {convertYear(item)}
                     </div>
                 ))}
-                {/* ))} */}
             </div>
         </div>
     );

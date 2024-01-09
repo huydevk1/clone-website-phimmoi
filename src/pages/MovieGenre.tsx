@@ -103,6 +103,10 @@ const MovieGenre = (props: Props) => {
         );
     };
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [genreId, currentPage]);
+
     return (
         <div className="p-5">
             <h1 className="text-[32px] font-bold text-center mt-[15px] mb-[25px]">{genreName}</h1>

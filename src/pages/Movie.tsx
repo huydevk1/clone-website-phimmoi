@@ -55,6 +55,10 @@ const Movie = (props: Props) => {
     const handleButtonClick = (buttonNumber: number) => {
         setSelectedButton(buttonNumber);
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [movieId, genreId]);
     return (
         <>
             <div>
